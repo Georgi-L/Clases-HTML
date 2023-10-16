@@ -94,6 +94,8 @@ color: white;
     display: var(--show, none);
 }
 
+
+
 /* Hero container*/
 
 .hero__container{
@@ -317,6 +319,34 @@ overflow: hidden;
   
 
   /* Ranking */
+  
+
+  .galeriapaises{
+    display: flex;
+    width: 500px;
+    height: 330px;    
+    overflow: hidden;
+    justify-content: center;
+    align-self: center;
+    margin-left: 25%;
+    margin-top: 30px;
+    box-shadow: rgba(3, 102, 214, 0.3) 0px 0px 0px 3px;
+  }
+
+  .galeriapaises img{
+    width: 0px;
+    flex-grow: 1;
+    object-fit: cover;
+    opacity: .8;
+    transition: .5s ease;
+  }
+  .galeriapaises img:hover{
+    cursor: crosshair;
+    width: 300px;
+    opacity: 1;
+    filter: contrast(120%);
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+  }
 
 
 /* Testimonios */
@@ -447,6 +477,73 @@ overflow: hidden;
     margin-bottom: 30px;
 }
 
+/* Formulario */
+
+.form {
+    display: block;
+}
+
+form p {
+    margin-bottom: 15px;
+}
+
+input, textarea {
+    width: calc(80% - 20px);
+    padding: 10px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+    text-align: center;
+    resize: none;
+}
+
+textarea:hover{
+    background-color: #ABEBC6;
+    border: #17A589;
+}
+
+input:hover{
+    background-color: #ABEBC6;
+    border: #17A589;
+}
+
+textarea:active{
+    background-color: #ABEBC6;
+    border: #17A589;
+}
+
+input:active{
+    background-color: #ABEBC6;
+    border: #17A589;
+}
+
+textarea {
+    height: 100px;
+    resize: none;
+}
+
+input[type="submit"] {
+    width: 50%;
+}
+
+/* Optional: Style for placeholder text */
+::placeholder {
+    color: #999;
+}
+
+/* Optional: Style for the submit button */
+input[type="submit"] {
+    background-color: #82E0AA;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+input[type="submit"]:hover {
+    background-color: #17A589 ;
+}
+
+
 /* Footer */
 
 .footer{
@@ -530,21 +627,15 @@ overflow: hidden;
 
 .footer__icons{
     margin-bottom: 10px;
+    margin-left: 1px;
+    margin-right: 1px;
 }
 
 .footer__img{
     width: 30px;
 }
 
-/*.footer__icons:active{
-    color: #000;
-}
 
-.footer__icons:hover{
-    color: #000;
-}
-
-*/ 
 
 /* Media queries */
 
